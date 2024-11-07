@@ -1,0 +1,38 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Règlements" flat="true" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="En Attente" class="section-title" />
+            
+            <StackLayout class="card">
+                <GridLayout rows="auto" columns="*,auto" class="mb-4">
+                    <StackLayout col="0">
+                        <Label text="Alice doit" class="text-lg" />
+                        <Label text="Le Petit Bistrot" class="text-sm text-gray-500" />
+                    </StackLayout>
+                    <Label text="45,50 €" col="1" class="text-lg font-bold text-red-500" />
+                </GridLayout>
+
+                <GridLayout rows="auto" columns="*,auto">
+                    <StackLayout col="0">
+                        <Label text="Bob doit" class="text-lg" />
+                        <Label text="Chez Marcel" class="text-sm text-gray-500" />
+                    </StackLayout>
+                    <Label text="62,00 €" col="1" class="text-lg font-bold text-red-500" />
+                </GridLayout>
+            </StackLayout>
+
+            <Label text="Réglés" class="section-title mt-6" />
+            <StackLayout class="card">
+                <GridLayout rows="auto" columns="*,auto" class="mb-2">
+                    <StackLayout col="0">
+                        <Label text="Alice a payé" class="text-lg" />
+                        <Label text="La Brasserie" class="text-sm text-gray-500" />
+                    </StackLayout>
+                    <Label text="38,50 €" col="1" class="text-lg font-bold text-green-500" />
+                </GridLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Scanner" flat="true" />
+    
+    <StackLayout class="p-4">
+        <Label text="Nouveau Reçu" class="section-title" />
+        
+        <StackLayout class="card">
+            <TextField hint="Nom du Restaurant" class="p-4 mb-2" />
+            <TextField hint="Montant Total" keyboardType="number" class="p-4 mb-2" />
+            <TextField hint="Date" class="p-4 mb-4" />
+            
+            <Button text="Scanner un Reçu" class="primary-button mb-2" tap="{{ onScanTap }}" />
+            <Button text="Saisie Manuelle" class="bg-gray-200 font-bold p-3 rounded-lg" tap="{{ onManualTap }}" />
+        </StackLayout>
+
+        <Label text="Derniers Scans" class="section-title mt-6" />
+        <StackLayout class="card">
+            <Label text="Aucun scan récent" class="text-gray-500 text-center p-4" />
+        </StackLayout>
+    </StackLayout>
+</Page>

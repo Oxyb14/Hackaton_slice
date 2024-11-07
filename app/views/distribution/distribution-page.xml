@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Répartition" flat="true" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Le Petit Bistrot" class="section-title" />
+            
+            <GridLayout rows="auto" columns="*,auto" class="card">
+                <Label text="Total" col="0" class="text-lg" />
+                <Label text="85,50 €" col="1" class="text-lg font-bold" />
+            </GridLayout>
+
+            <Label text="Participants" class="section-title mt-4" />
+            
+            <StackLayout class="card">
+                <GridLayout rows="auto" columns="*,auto,auto" class="mb-2">
+                    <Label text="Alice" col="0" class="text-lg" />
+                    <Label text="45,50 €" col="1" class="text-lg font-bold text-green-500 mr-2" />
+                    <Switch checked="true" col="2" />
+                </GridLayout>
+                
+                <GridLayout rows="auto" columns="*,auto,auto">
+                    <Label text="Bob" col="0" class="text-lg" />
+                    <Label text="40,00 €" col="1" class="text-lg font-bold text-green-500 mr-2" />
+                    <Switch checked="true" col="2" />
+                </GridLayout>
+            </StackLayout>
+
+            <Button text="Valider la Répartition" class="primary-button mt-4" tap="{{ onValidateTap }}" />
+        </StackLayout>
+    </ScrollView>
+</Page>

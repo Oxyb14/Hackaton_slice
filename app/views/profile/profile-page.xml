@@ -1,0 +1,33 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Profil" flat="true" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <StackLayout class="card">
+                <Image src="res://profile_placeholder" width="100" height="100" class="rounded-full mb-4" />
+                <Label text="Alice Dubois" class="text-xl font-bold text-center" />
+                <Label text="alice@email.com" class="text-gray-500 text-center" />
+            </StackLayout>
+
+            <Label text="Paramètres" class="section-title mt-6" />
+            <StackLayout class="card">
+                <GridLayout rows="auto" columns="*,auto" class="mb-4">
+                    <Label text="Notifications" col="0" class="text-lg" />
+                    <Switch checked="true" col="1" />
+                </GridLayout>
+                
+                <GridLayout rows="auto" columns="*,auto" class="mb-4">
+                    <Label text="Mode Sombre" col="0" class="text-lg" />
+                    <Switch checked="false" col="1" />
+                </GridLayout>
+
+                <GridLayout rows="auto" columns="*,auto">
+                    <Label text="Devise" col="0" class="text-lg" />
+                    <Label text="EUR" col="1" class="text-lg text-gray-500" />
+                </GridLayout>
+            </StackLayout>
+
+            <Button text="Déconnexion" class="bg-red-500 text-white font-bold p-4 rounded-lg mt-6" tap="{{ onLogoutTap }}" />
+        </StackLayout>
+    </ScrollView>
+</Page>

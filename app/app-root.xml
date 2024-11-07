@@ -1,0 +1,17 @@
+<TabView androidTabsPosition="bottom" selectedTabTextColor="#61D7A3" tabTextFontSize="12">
+    <TabViewItem title="Accueil" ios:iconSource="res://home" android:iconSource="res://home">
+        <Frame defaultPage="views/home/home-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Scanner" ios:iconSource="res://scan" android:iconSource="res://scan">
+        <Frame defaultPage="views/scan/scan-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Répartition" ios:iconSource="res://split" android:iconSource="res://split">
+        <Frame defaultPage="views/distribution/distribution-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Règlements" ios:iconSource="res://payment" android:iconSource="res://payment">
+        <Frame defaultPage="views/payments/payments-page"></Frame>
+    </TabViewItem>
+    <TabViewItem title="Profil" ios:iconSource="res://profile" android:iconSource="res://profile">
+        <Frame defaultPage="views/profile/profile-page"></Frame>
+    </TabViewItem>
+</TabView>

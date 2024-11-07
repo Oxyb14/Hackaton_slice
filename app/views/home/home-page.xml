@@ -1,0 +1,37 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Accueil" flat="true" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Dépenses Récentes" class="section-title" />
+            
+            <GridLayout rows="auto" columns="*,auto" class="card">
+                <StackLayout col="0">
+                    <Label text="Le Petit Bistrot" class="text-lg font-bold" />
+                    <Label text="23 Mars 2024" class="text-sm text-gray-500" />
+                </StackLayout>
+                <Label text="85,50 €" col="1" class="text-lg font-bold text-green-500" />
+            </GridLayout>
+
+            <GridLayout rows="auto" columns="*,auto" class="card">
+                <StackLayout col="0">
+                    <Label text="Chez Marcel" class="text-lg font-bold" />
+                    <Label text="22 Mars 2024" class="text-sm text-gray-500" />
+                </StackLayout>
+                <Label text="124,00 €" col="1" class="text-lg font-bold text-green-500" />
+            </GridLayout>
+
+            <Label text="Aperçu Mensuel" class="section-title mt-6" />
+            <GridLayout rows="auto" columns="*,*" class="card">
+                <StackLayout col="0">
+                    <Label text="Total du Mois" class="text-base text-gray-500" />
+                    <Label text="842,50 €" class="text-xl font-bold" />
+                </StackLayout>
+                <StackLayout col="1">
+                    <Label text="À Régler" class="text-base text-gray-500" />
+                    <Label text="156,00 €" class="text-xl font-bold text-red-500" />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
